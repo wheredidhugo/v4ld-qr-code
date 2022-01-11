@@ -2,12 +2,9 @@ const express = require("express"),
   upload = require("express-fileupload"),
   sharp = require("sharp"),
   path = require("path"),
-  fs = require("fs"),
   app = express(),
   port = 3000;
 
-var dir = "img/";
-var dirOutput = "output/";
 var template = "template/v4ld.png";
 
 function sleep(time) {
@@ -52,14 +49,13 @@ app.post("/", (req, res) => {
           }
         });
       await sleep(500);
-      res.sendFile(path.join(__dirname + "/" + dirOutput + fName));
+      res.sendFile(path.join(__dirname + `/output/${fName}`));
     }
 
     qrcoded();
-    //res.sendFile(path.join(__dirname + "/" + dirOutput + fName));
   }
 });
 
 app.listen(port, () => {
-  console.log(`Example app listening at http://localhost:${port}`);
+  console.log(`Listening at http://localhost:${port}`);
 });

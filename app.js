@@ -10,7 +10,7 @@ var dir = "img/";
 var dirOutput = "output/";
 var template = "template/v4ld.png";
 
-function sleep (time) {
+function sleep(time) {
   return new Promise((resolve) => setTimeout(resolve, time));
 }
 
@@ -51,8 +51,8 @@ app.post("/", (req, res) => {
               .toFile(`output/${fName}`);
           }
         });
-        await sleep(500);
-        res.sendFile(path.join(__dirname + "/" + dirOutput + fName));
+      await sleep(500);
+      res.sendFile(path.join(__dirname + "/" + dirOutput + fName));
     }
 
     qrcoded();

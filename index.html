@@ -1,69 +1,90 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <style>
-      @import url("https://fonts.googleapis.com/css2?family=VT323&display=swap");
-      @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap");
-      body {
-        font-family: "VT323", monospace;
-      }
-      .v4ld {
-        width: 8.2%;
-        animation: typing 1s steps(9), blink 0.5s step-end infinite alternate;
-        white-space: nowrap;
-        overflow: hidden;
-        border-right: 3px solid;
-      }
-      input {
-        width: 100%;
-      }
-      .box {
-        font-size: 150%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-direction: column;
-      }
-      .footer {
-        position: fixed;
-        left: 0;
-        bottom: 0;
-        width: 100%;
-        background-color: gray;
-        color: white;
-        text-align: center;
-        font-family: "Montserrat", sans-serif;
-      }
-      @keyframes typing {
-        from {
-          width: 0;
-        }
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <style>
+    @import url("https://fonts.googleapis.com/css2?family=VT323&display=swap");
+    @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap");
+
+    body {
+      font-family: "VT323", monospace;
+    }
+
+    .v4ld {
+      width: 0;
+      overflow: hidden;
+      border-right: .15em solid black;
+      animation: typing 1s steps(20, end) forwards;
+    }
+
+    input {
+      width: 100%;
+    }
+
+    .box {
+      font-size: 150%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+    }
+
+    .container {
+      display: inline-block;
+    }
+
+    .footer {
+      position: fixed;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      background-color: gray;
+      color: white;
+      text-align: center;
+      font-family: "Montserrat", sans-serif;
+    }
+
+    @keyframes typing {
+      from {
+        width: 0
       }
 
-      @keyframes blink {
-        50% {
-          border-color: transparent;
-        }
+      to {
+        width: 100%
       }
-    </style>
-    <title>V4ld_V QR Code</title>
-  </head>
-  <body>
-    <div class="box">
+    }
+  </style>
+  <title>V4ld_V QR Code</title>
+</head>
+
+<body>
+  <div class="box">
+    <div class="container">
       <h1 class="v4ld">V4ld_V</h1>
-      <h1>Créer ton QR Code</h1>
-      <form method="POST" action="/" enctype="multipart/form-data">
-        <input type="file" name="file" id="file" accept="image/*" />
-        <br /><br />
-        <input type="submit" value="Envoyer" />
-      </form>
     </div>
-    <div class="footer">
+    <h1>Créer ton QR Code</h1>
+    <form method="POST" action="/" enctype="multipart/form-data">
+      <input type="file" name="file" id="file" accept="image/*" />
+      <br /><br />
+      <input type="submit" value="Envoyer" />
+    </form>
+  </div>
+  <div class="footer">
+    <div>
       Créer avec ❤️ par
       <a href="https://github.com/bgpvp/v4ld-qr-code">bgpvp</a>
     </div>
-  </body>
+    <div>
+      Inspiré du
+      <a href="https://twitter.com/RaelRaph/status/1479951266071654400">
+        thread
+      </a>
+      de @RaelRaph
+    </div>
+  </div>
+</body>
+
 </html>

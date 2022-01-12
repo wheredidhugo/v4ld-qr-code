@@ -2,6 +2,7 @@ const express = require("express"),
   upload = require("express-fileupload"),
   sharp = require("sharp"),
   path = require("path"),
+  fs = require("fs"),
   app = express(),
   port = 3000;
 
@@ -23,9 +24,7 @@ app.post("/", (req, res) => {
     var fName = file.name;
 
     file.mv(`./img/${fName}`, function (err) {
-      if (err) {
-        throw err;
-      }
+      if (err) throw err;
     });
 
     async function qrcoded() {
@@ -50,6 +49,13 @@ app.post("/", (req, res) => {
         });
       await sleep(500);
       res.sendFile(path.join(__dirname + `/output/${fName}`));
+      fs.unlink(`img/${fName}`, function (err){
+        if (err) throw err;
+      });
+      await sleep(1000);
+      fs.unlink(`output/${fName}`, function(err){
+        if (err) throw err;
+      })
     }
 
     qrcoded();

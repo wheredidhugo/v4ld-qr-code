@@ -47,15 +47,15 @@ app.post("/", (req, res) => {
               .toFile(`output/${fName}`);
           }
         });
-      await sleep(500);
+      await sleep(1000);
       res.sendFile(path.join(__dirname + `/output/${fName}`));
-      fs.unlink(`img/${fName}`, function (err){
+      fs.unlink(`img/${fName}`, function (err) {
         if (err) throw err;
       });
       await sleep(1000);
-      fs.unlink(`output/${fName}`, function(err){
+      fs.unlink(`output/${fName}`, function (err) {
         if (err) throw err;
-      })
+      });
     }
 
     qrcoded();

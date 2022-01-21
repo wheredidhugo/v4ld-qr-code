@@ -7,17 +7,24 @@
 </div>
 
 <div align="center">
-    <br>
     <div>
         <h2>Créer l'application web depuis ce repo</h2>
     </div>
-    <br>
     <div>
         <h3><strong>Étapes:</strong></h3>
     </div>
     <br>
     <div>
         <strong>Étape 1:</strong>
+    </div>
+    <div>
+        Cloner ce repository:
+        <br>
+        <code>> git clone https://github.com/bgpvp/v4ld-qr-code.git</code>
+    </div>
+    <br>
+    <div>
+        <strong>Étape 2:</strong>
     </div>
     <div>
         Installer toutes les dépendances:

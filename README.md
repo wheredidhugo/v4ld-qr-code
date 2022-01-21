@@ -1,11 +1,12 @@
-[![V4ld-QR-Code](https://raw.githubusercontent.com/bgpvp/v4ld-qr-code/main/readme-img/screenshot.png)](https://v4ld.cf)
-<div style="text-align: center;">
+<a href="https://v4ld.cf">
+    <img src="https://raw.githubusercontent.com/bgpvp/v4ld-qr-code/main/readme-img/screenshot.png">
+</a>
+
+<div align="center">
     <h2>📸 Permet de créer une photo de profil QR Code redirigeant vers <a href="https://vald.store">vald.store</a></h2>
 </div>
 
----
-
-<div style="text-align: center;">
+<div align="center">
     <br>
     <div>
         <h2>Créer l'application web depuis ce repo</h2>
@@ -41,7 +42,7 @@
             <img src="https://www.herokucdn.com/deploy/button.svg">
         </a>
         <a href="https://railway.app/new/template?template=https%3A%2F%2Fgithub.com%2Fbgpvp%2Fv4ld-qr-code">
-            <img src="https://railway.app/button.svg" style="width: 37%;">
+            <img src="https://railway.app/button.svg" width="150">
         </a>
     </div>
     <br>

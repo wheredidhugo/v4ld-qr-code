@@ -11,6 +11,7 @@
 
     body {
       font-family: "VT323", monospace;
+      overflow: hidden;
     }
 
     .v4ld {
@@ -30,6 +31,13 @@
       align-items: center;
       justify-content: center;
       flex-direction: column;
+    }
+
+    .center {
+      height: 50vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
     }
 
     .container {
@@ -65,13 +73,23 @@
     <div class="container">
       <h1 class="v4ld">V4ld_V</h1>
     </div>
+
     <h1>Créer ton QR Code</h1>
+
     <form method="POST" action="/" enctype="multipart/form-data">
       <input type="file" name="file" id="file" accept="image/*" />
       <br /><br />
       <input type="submit" value="Envoyer" />
     </form>
+
   </div>
+
+  <div class="center">
+    <a href="https://v4ld.lnk.to/album">
+      <h1>L'album est sorti!</h1>
+    </a>
+  </div>
+
   <div class="footer">
     <div>
       Crée avec ❤️ par

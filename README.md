@@ -1,6 +1,6 @@
 <div align="center">
     <a href="https://v4ld.cf">
-        <img src="https://raw.githubusercontent.com/bgpvp/v4ld-qr-code/main/readme-img/screenshot.png" width="500">
+        <img src="https://i.imgur.com/HrEjCr2.png" width="500">
     </a>
 </div>
 
@@ -20,9 +20,7 @@
         <strong>Étape 1:</strong>
     </div>
     <div>
-        Cloner ce repository:
-        <br>
-        <code>> git clone https://github.com/bgpvp/v4ld-qr-code.git</code>
+        Cloner ce repository
     </div>
     <br>
     <div>
@@ -41,18 +39,6 @@
         Lancer l'application web:
         <br>
         <code>> npm start</code>
-    </div>
-    <br>
-    <div>
-        <h1>Créer l'application web à l'aide de bouton pour déployer</h1>
-    </div>
-    <div>
-        <a href="https://dashboard.heroku.com/new?template=https://github.com/bgpvp/v4ld-qr-code">
-            <img src="https://www.herokucdn.com/deploy/button.svg">
-        </a>
-        <a href="https://railway.app/new/template?template=https%3A%2F%2Fgithub.com%2Fbgpvp%2Fv4ld-qr-code">
-            <img src="https://railway.app/button.svg" width="147.5">
-        </a>
     </div>
     <br>
     <div>
